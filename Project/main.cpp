@@ -12,7 +12,7 @@ void preencherLista(int vetor[tamanho]){
 }
 
 void exibirLista(int vetor[tamanho]){
-    if (vetor[0] == -1){
+    if (vetor[0] == -159753){
         cout << "\n---> Preencha a lista antes de exibir! <---\n\n";
     }else{
         cout << "\n---> ";
@@ -24,14 +24,22 @@ void exibirLista(int vetor[tamanho]){
     }
 }
 
-void limparLista(int vetor[tamanho]){
-    int ordem = 0;
-    for(int posicao = 0; posicao <tamanho; posicao++){
-        vetor[posicao] = vetor[posicao + 1];
-        vetor[tamanho-(posicao+1)] = '\0';
-            cout << "----------------------------------" << endl;
+void ordenarVetor(int vetor[tamanho]){
+    int aux = 0;
+    for (int posicao = 0; posicao < tamanho; posicao ++){
+        aux = vetor[posicao + 1];
+        vetor[posicao] = aux;
+    }
+    vetor[4] = 0;
+}
 
-           exibirLista(vetor);
+void limparLista(int vetor[tamanho]){
+    exibirLista(vetor);
+    for(int posicao = 0; posicao < tamanho; posicao++){
+        ordenarVetor(vetor);
+        cout << "----------------------------------" << endl;
+
+        exibirLista(vetor);
     }
 }
 
@@ -39,7 +47,7 @@ int main()
 {
     int opcao = -1;
 
-    int lista[tamanho] = {-1,0,0,0,0};
+    int lista[tamanho] = {-159753,0,0,0,0};
     while(opcao != 0){
         cout << "Menu : " << endl;
         cout << "1-Preencher Lista " << endl;
