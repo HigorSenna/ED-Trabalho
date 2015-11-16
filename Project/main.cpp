@@ -35,8 +35,6 @@ void ordenarVetor(int vetor[tamanho]){
         vetor[posicao] = aux;
     }
     vetor[tamanho-1] = 0;
-
-
 }
 
 void limparLista(int vetor[tamanho]){
