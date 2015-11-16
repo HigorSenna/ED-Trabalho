@@ -5,6 +5,7 @@
 1447509765 source:c:\users\diego\documents\github\ed-trabalho\project\main.cpp
 	<iostream>
 
+<<<<<<< HEAD
 1447489754 source:c:\users\higor senna\desktop\ed-trabalho-fb06297625ec6409da5d9c2fadd1a34b982e2c81\project\main.cpp
 	<iostream>
 
@@ -14,3 +15,5 @@
 1447701599 source:c:\users\higor senna\documents\github\ed-trabalho\project\main.cpp
 	<iostream>
 
+=======
+>>>>>>> origin/master
